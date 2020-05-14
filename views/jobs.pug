@@ -1,0 +1,19 @@
+html
+	head
+		title Rater
+	body
+		h1 Jobs on Rater
+		div
+			form(
+				method="POST"
+			)
+				input(
+					name="title"
+					placeholder="Job title"
+				)
+				button(
+					type="submit"
+				) Save job
+		div
+			each job in jobs
+				div= job.title
